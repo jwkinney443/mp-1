@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A website showcasing John Kinney's Projects Page for Online Resume">
+    <link type="text/css" rel="stylesheet" href="./css/projects.css">
+    <title>Projects | Resume</title>
+</head>
+
+<!--Follow form of Header, Nav, Main, Footer-->
+<body>
+    <div id="page-wrapper">
+
+        <!--Main Header-->
+        <header>
+            <h1>John (Jack) Kinney</h1>
+            <p>Online Resume</p>
+        </header>
+
+        <div id="container">
+            <!--Nav Bar-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="employment.html">Employment</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!--Main Section-->
+            <main>
+                <h2 id="main-title">Projects</h2>
+
+                <div id="main">
+                    <div id="main-text">
+
+                        <!-- Credit Card Fraud Detection Kaggle Competition -->
+                        <h3>Credit Card Fraud Detection Kaggle Competition</h3>
+                        <p><strong>Technologies:</strong> Python, Boosting, Machine Learning, pandas</p>
+                        <p><strong>Description:</strong></p>
+                        <ul>
+                            <li>Achieved 1st place in a Kaggle competition with over 120 participants, demonstrating exceptional performance in fraud detection. The model achieved 98.65% accuracy on out-of-sample data, leveraging a dataset of over 1.3M+ transactions.</li>
+                            <li>Optimized model performance through hyper parameter selection, iterative tuning, and addressing class imbalances to deliver highly reliable predictions.</li>
+                            <li>Implemented effective data preprocessing and efficient computation to maintain model scalability and accuracy.</li>
+                        </ul>
+
+                        <!-- ReCo -->
+                        <h3>ReCo</h3>
+                        <p><strong>Technologies:</strong> JavaScript, MongoDB, Express, Node.js, HTML, CSS</p>
+                        <p><strong>Description:</strong></p>
+                        <ul>
+                            <li>Created a full-stack event recommendation app integrated with Spotify's and Ticketmaster's API, enhancing user experience by providing personalized concert suggestions.</li>
+                            <li>Designed and implemented a MongoDB database schema to efficiently store and retrieve user-specific event data, enabling personalized recommendations and improving performance.</li>
+                        </ul>
+
+                        <!-- Recipe Cauldron -->
+                        <h3>Recipe Cauldron</h3>
+                        <p><strong>Technologies:</strong> JavaScript, Express, Node.js, HTML, CSS</p>
+                        <p><strong>Description:</strong></p>
+                        <ul>
+                            <li>Constructed a full-stack web application to help users generate creative recipes based on available ingredients.</li>
+                            <li>Integrated OpenAI’s API to craft personalized recipes with nutritional information, serving sizes, and detailed instructions.</li>
+                            <li>Utilized YouTube's API to fetch and display related videos for recipe preparation.</li>
+                        </ul>
+                    </div>
+
+                    <div id="calculator">
+                        <h3>Calculator</h3>
+                        <label for="first-number">First Number: </label><input id="first-number">
+                        <label for="second-number">Second Number: </label><input id="second-number">
+                        <button onclick="addition()">+</button>
+                        <button onclick="subtraction()">-</button>
+                        <button onclick="multiplication()">*</button>
+                        <button onclick="division()">/</button>
+                        <button onclick="power()">**</button>
+                        <h3 id="output"></h3>
+                        <button onclick="clearOutput()">Clear</button>
+                    </div>
+
+
+                </div>
+
+
+
+            </main>
+        </div>
+
+        <!--Footer Section-->
+        <footer>
+            <p>All rights reserved: <a href="">Credits</a> &#169;</p>
+        </footer>
+    </div>
+
+    <script src="project.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Avenir, Futura, Lato, Helvetica, Verdana, Arial, sans-serif;
+}
+
+/* Center Page */
+#page-wrapper{
+    width: 85vw;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    background-color: #ffffff;
+    color: #bd81ed;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: #dacef8;
+}
+
+nav{
+    width: 30%; /*For screens bigger than 750-px: should not exceed 30% of the width of its parent, and
+must be vertical.*/
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #bd81ed;
+    font-size: calc(2px + 2vw);
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav li{
+    font-size: calc(3px + 3vw);
+    width: 90%;
+    background-color: #f2ecf4;
+    padding: 2vh 0;
+    margin: 5vh auto;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width:70%; /*For screens bigger than 1000-px: should not exceed 70% of the width of its parent*/
+    background-color: #e0c3f3;
+}
+
+main p{
+    margin: 0 1vw;
+    font-size: calc(2px + 2vw);
+}
+
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 2vh 2vw;
+}
+
+#main-title{
+    margin: 2vw 0;
+    text-align: center;
+    font-size: calc(2px + 2vw);
+    color: #ffffff;
+}
+
+#main-text{
+    align-self: center;
+    width: 65%;
+    margin: 1vh 1vw;
+}
+
+#profile-pic{
+    max-width: 100%;
+}
+
+#main-profile{
+    width: 60%;
+    margin: 1vh 1vw;
+}
+
+#welcome{
+
+    max-width: 85%;
+    height:auto;
+    margin: 2vh auto;
+
+}
+
+footer{
+    background-color: #ffffff;
+    color: #bd81ed;
+    padding: 1vh 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Tinker with max width sizes! */
+@media screen and (max-width: 900px){
+    header{
+        align-items:center;
+    }
+
+    #container{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #bd81ed;
+        list-style: none;
+        padding-left: 0;
+    }
+
+    nav li{
+        font-size: calc(2px + 2vw);
+        background-color: #f2ecf4;
+        padding: 2vh 0;
+        margin: 1vh 0;
+    }
+
+    nav a{
+        text-decoration: none;
+    }
+
+    main{
+        width: 100%;
+        height: auto; /*increase height of main to 100vh to avoid white space at bottom*/
+        display: flex;
+        flex-direction: column;
+        background-color: #e0c3f3;
+    }
+
+    main p{
+        margin: 0 1vw;
+        font-size: calc(2px + 2vw);
+    }
+
+    #profile-pic{
+        max-width: 100%;
+    }
+
+    #welcome{
+
+        max-width: 90%;
+
+    }
+
+
+    #main-text{
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    }
+
+    #main-title{
+        text-align: center;
+        color: #ffffff;
+    }
+
+}
