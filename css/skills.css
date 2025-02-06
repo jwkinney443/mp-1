@@ -18,7 +18,7 @@ header{
     flex-direction: column;
     padding: 1vh 1vw;
     background-color: #ffffff;
-    color: #bd81ed;
+    color: #390765;
 }
 
 #container{
@@ -55,6 +55,7 @@ nav li{
 
 nav a{
     text-decoration: none;
+    color: #390765;
 }
 
 main{
@@ -86,7 +87,7 @@ main p{
     margin: 2vw 0;
     text-align: center;
     font-size: calc(2px + 2vw);
-    color: #ffffff;
+    color: #390765;
 }
 
 #main-text{
@@ -97,7 +98,7 @@ main p{
 
 footer{
     background-color: #ffffff;
-    color: #bd81ed;
+    color: #390765;
     padding: 1vh 1vw;
     display: flex;
     flex-direction: row;
@@ -137,6 +138,7 @@ footer{
 
     nav a{
         text-decoration: none;
+        color: #390765;
     }
 
     main{
@@ -164,7 +166,6 @@ footer{
 
     #main-title{
         text-align: center;
-        color: #ffffff;
     }
 
 }
